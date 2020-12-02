@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+        <h1>hello</h1>
+        
+        <script >
+
+fetch(
+ 'https://graph.facebook.com/v9.0/me?fields=id%2Cname&access_token=EAAGRsg1Ugb0BACbU7wXfwSNmXiNFR3TG14Ozlwhx7bPyrGz9McJZAPtekzXUry6gMhdJ1DMfnYKgc4EhHlXbKyyKvtDodG2GJ9zPPl5P87k5iAiQZAkBY08UEAjXqAVV6eZC4nZBpdORNlrbQ7wPMg40ti8W0EV3StmDv3SZBHHn3H4nLxfYmtLbNI8XPPx0ZD')
+     .then((apidata) => {
+         console.log(apidata);
+         return apidata.json();
+     }).then((actualdata) => {
+         console.log(actualdata);
+
+     }).catch((error) => {
+         console.log(error);
+     });
+ 
+  
+        </script>
+    </body>
+</html>
